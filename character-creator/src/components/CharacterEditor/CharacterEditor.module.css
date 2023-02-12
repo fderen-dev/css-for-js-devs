@@ -1,5 +1,9 @@
+:root {
+  --top-spacing: 128px;
+}
+
 .characterEditor {
-  padding-top: 128px;
+  padding-top: var(--top-spacing);
   padding-bottom: 64px;
 }
 
@@ -8,6 +12,7 @@
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +29,13 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  top: var(--top-spacing);
+  right: 0;
+  width: 35%;
+  min-height: 500px;
 }
 
 .controlColumn {
+  width: 50%;
 }
