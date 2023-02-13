@@ -29,13 +29,32 @@
 }
 
 .characterWrapper {
+  z-index: -1;
   position: fixed;
   top: var(--top-spacing);
   right: 0;
+  left: 0;
   width: 35%;
   min-height: 500px;
+  margin: 0 auto;
 }
 
 .controlColumn {
-  width: 50%;
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+@media (min-width: 575px) {
+  .controlColumn {
+    overflow-x: unset;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .characterWrapper {
+    margin: unset;
+    left: unset;
+    z-index: unset;
+  }
 }

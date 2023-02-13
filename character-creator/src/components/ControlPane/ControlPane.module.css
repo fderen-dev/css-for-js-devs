@@ -10,8 +10,11 @@
     to deal with it yet!
   */
   margin-bottom: 32px;
-  overflow-x: scroll;
   white-space: nowrap;
+}
+
+.controlPane:not(:last-child) {
+  margin-right: 8px;
 }
 
 .title {
@@ -25,4 +28,10 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
+}
+
+@media (min-width: 575px) {
+  .controlPane {
+    overflow-x: scroll;
+  }
 }
