@@ -27,6 +27,7 @@ const Header = () => {
 };
 
 const MainHeader = styled.div`
+  position: relative;
   min-height: 72px;
   gap: 32px;
   padding: 12px 32px;
@@ -39,8 +40,8 @@ const Nav = styled.nav`
   display: flex;
   row-gap: 16px;
   column-gap: 32px;
-  flex: 3;
   flex-wrap: wrap;
+  margin: 0 auto 0 auto;
 `;
 
 const NavLink = styled.a`
